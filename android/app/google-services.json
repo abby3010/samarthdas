@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950269228225",
+    "project_id": "samarthdas-9b369",
+    "storage_bucket": "samarthdas-9b369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950269228225:android:dea0c0fc475487e3535040",
+        "android_client_info": {
+          "package_name": "com.smarthadas.samarthdas_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950269228225-pnsmfjktn90rlaufptkpk2ni8hsvki72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh-EBonnJoWyCqbh-oTgD_1LJ8pB_PM3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950269228225-pnsmfjktn90rlaufptkpk2ni8hsvki72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
