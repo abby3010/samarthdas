@@ -28,8 +28,7 @@ class _InstitutionState extends State<Institution> {
                       border: Border.all(color: Colors.white, width: 3),
                       borderRadius: BorderRadius.circular(30),
                       image: const DecorationImage(
-                          image: AssetImage(
-                              "assets/images/WhatsApp Image 2021-12-12 at 10.30 1.png"),
+                          image: AssetImage("assets/images/Institution.png"),
                           fit: BoxFit.contain)),
                 ),
               ),

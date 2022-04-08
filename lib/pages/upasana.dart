@@ -16,10 +16,10 @@ class _UpasanaState extends State<Upasana> {
     "Manobodh"
   ];
   final List<String> upasanaImages = [
-    "assets/images/Group 9.png",
-    "assets/images/Group 8.png",
-    "assets/images/Group 10.png",
-    "assets/images/Group 22.png",
+    "assets/images/Shri_Ram.png",
+    "assets/images/Lord_Hanuman.png",
+    "assets/images/Ramdas_Swami_1.png",
+    "assets/images/Body.png",
   ];
   @override
   Widget build(BuildContext context) {
@@ -67,14 +67,11 @@ class _UpasanaState extends State<Upasana> {
               child: Row(
                 children: [
                   Container(
-                    margin: const EdgeInsets.only(
-                        right: 10, left: 10, top: 10),
+                    margin: const EdgeInsets.only(right: 10, left: 10, top: 10),
                     width: 110,
                     height: 115,
                     decoration: BoxDecoration(
                         color: Colors.transparent,
-                        // border: Border.all(color: Colors.transparent, width: 3),
-                        // borderRadius: BorderRadius.circular(30),
                         image: DecorationImage(
                             image: AssetImage(upasanaImages[index]),
                             fit: BoxFit.fitHeight)),

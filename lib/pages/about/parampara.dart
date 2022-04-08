@@ -24,7 +24,7 @@ class _ParamparaState extends State<Parampara> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(5.0),
                   child: Image.asset(
-                    'assets/images/7 1.png',
+                    'assets/images/Ramdas_Swami.png',
                     width: 128.0,
                     height: 158.0,
                     fit: BoxFit.fill,
@@ -87,7 +87,7 @@ class _ParamparaState extends State<Parampara> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(5.0),
                 child: Image.asset(
-                  'assets/images/jukkal-home-slider-img-03 1 (1).png',
+                  'assets/images/jukkal-home-slider-img-03 1.png',
                   width: 128.0,
                   height: 158.0,
                   fit: BoxFit.fill,

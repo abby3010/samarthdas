@@ -43,7 +43,7 @@ class _MainPageState extends State<MainPage> {
           height: 60,
           items: <Widget>[
             ImageIcon(
-              const AssetImage("assets/images/Group 12.png"),
+              const AssetImage("assets/images/Temple_1.png"),
               color: (page == 0)
                   ? const Color(0xFFF79023)
                   : const Color(0xFF652308),
@@ -59,7 +59,7 @@ class _MainPageState extends State<MainPage> {
                     ? const Color(0xFFF79023)
                     : const Color(0xFF652308)),
             ImageIcon(
-              const AssetImage("assets/images/Group 19.png"),
+              const AssetImage("assets/images/Internet.png"),
               color: (page == 3)
                   ? const Color(0xFFF79023)
                   : const Color(0xFF652308),
