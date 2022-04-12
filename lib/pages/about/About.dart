@@ -73,7 +73,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
               // Tab Bar View
               physics: const NeverScrollableScrollPhysics(),
               controller: _controller,
-              children: [Institution(), const Parampara(), const Events()],
+              children: const [Institution(showAppBar: false,), Parampara(showAppBar: false,), Events()],
             ),
           ),
         ],
@@ -90,30 +90,27 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
     } else if (CategoryType.events == categoryTypeData) {
       txt = 'Events';
     }
-    return Expanded(
-      flex: 1,
-      child: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-            color: isSelected ? const Color(0xFF652308) : Colors.transparent,
-            borderRadius: const BorderRadius.all(Radius.circular(24.0)),
-            border: Border.all(color: const Color(0xFF652308))),
-        child: Center(
-          child: Material(
-            color: Colors.transparent,
-            child: Padding(
-              padding:
-                  const EdgeInsets.only(top: 12, bottom: 12, left: 18, right: 18),
-              child: Text(
-                txt,
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 15,
-                  color: isSelected
-                      ? const Color(0xFFFBD99C)
-                      : const Color(0xFF652308),
-                ),
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+          color: isSelected ? const Color(0xFF652308) : Colors.transparent,
+          borderRadius: const BorderRadius.all(Radius.circular(24.0)),
+          border: Border.all(color: const Color(0xFF652308))),
+      child: Center(
+        child: Material(
+          color: Colors.transparent,
+          child: Padding(
+            padding:
+                const EdgeInsets.only(top: 12, bottom: 12, left: 18, right: 18),
+            child: Text(
+              txt,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 15,
+                color: isSelected
+                    ? const Color(0xFFFBD99C)
+                    : const Color(0xFF652308),
               ),
             ),
           ),

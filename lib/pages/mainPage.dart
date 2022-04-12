@@ -5,6 +5,7 @@ import 'package:samarthdas_app/pages/manobodh/manobodh.dart';
 import 'package:samarthdas_app/pages/media.dart';
 import 'package:samarthdas_app/pages/upasana.dart';
 import 'about/About.dart';
+import 'explore.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class _MainPageState extends State<MainPage> {
     const About(),
     const Upasana(),
     const HomePage(),
-    const Manobodh(),
+    Explore(),
     Media()
   ];
   @override
@@ -48,6 +49,7 @@ class _MainPageState extends State<MainPage> {
                   ? const Color(0xFFF79023)
                   : const Color(0xFF652308),
             ),
+
             Icon(Icons.book,
                 size: 30,
                 color: (page == 1)

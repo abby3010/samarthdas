@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:samarthdas_app/components/customAppBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Institution extends StatefulWidget {
-  const Institution({Key? key}) : super(key: key);
+class Institution extends StatelessWidget {
+  final bool showAppBar;
+  const Institution({Key? key, required this.showAppBar}) : super(key: key);
 
-  @override
-  State<Institution> createState() => _InstitutionState();
-}
-
-class _InstitutionState extends State<Institution> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: showAppBar ? SamarthAppBar(title: "Institution") : null,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8),
@@ -25,8 +23,7 @@ class _InstitutionState extends State<Institution> {
                   height: 221,
                   decoration: BoxDecoration(
                       color: Colors.white,
-                      border: Border.all(color: Colors.white, width: 3),
-                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(color: const Color(0xFFF79023), width: 5),
                       image: const DecorationImage(
                           image: AssetImage("assets/images/Institution.png"),
                           fit: BoxFit.contain)),

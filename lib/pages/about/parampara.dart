@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Parampara extends StatefulWidget {
-  const Parampara({Key? key}) : super(key: key);
+import '../../components/customAppBar.dart';
 
-  @override
-  State<Parampara> createState() => _ParamparaState();
-}
+class Parampara extends StatelessWidget {
+  final bool showAppBar;
+  const Parampara({Key? key, required this.showAppBar}) : super(key: key);
 
-class _ParamparaState extends State<Parampara> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: showAppBar ? SamarthAppBar(title: "Parampara") : null,
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: SingleChildScrollView(
@@ -24,7 +23,7 @@ class _ParamparaState extends State<Parampara> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(5.0),
                   child: Image.asset(
-                    'assets/images/Ramdas_Swami.png',
+                    'assets/images/7 1.png',
                     width: 128.0,
                     height: 158.0,
                     fit: BoxFit.fill,
@@ -50,7 +49,7 @@ class _ParamparaState extends State<Parampara> {
                   ),
                   textAlign: TextAlign.justify),
               const SizedBox(
-                height: 10,
+                height: 50,
               ),
               Center(
                 child: ClipRRect(
@@ -82,7 +81,7 @@ class _ParamparaState extends State<Parampara> {
                   ),
                   textAlign: TextAlign.justify),
               const SizedBox(
-                height: 10,
+                height: 50,
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(5.0),
@@ -110,7 +109,7 @@ class _ParamparaState extends State<Parampara> {
                   ),
                   textAlign: TextAlign.justify),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               InkWell(
                   onTap: () {

@@ -10,7 +10,8 @@ class Manobodh extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CollectionReference collectionReference = FirebaseFirestore.instance.collection('Manobodh');
+    CollectionReference collectionReference =
+        FirebaseFirestore.instance.collection('Manobodh');
 
     return Scaffold(
       appBar: SamarthAppBar(title: "Manobodh"),
@@ -28,7 +29,7 @@ class Manobodh extends StatelessWidget {
 
           if (snapshot.connectionState == ConnectionState.done) {
             Map<String, dynamic> dataObj =
-            snapshot.data!.data() as Map<String, dynamic>;
+                snapshot.data!.data() as Map<String, dynamic>;
 
             var data = dataObj["manobodh_grps"];
             return ListView.builder(
@@ -41,7 +42,9 @@ class Manobodh extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => DisplayText(
-                                  name: data[index]['name'], text: data[index]['text'].replaceAll("\\n", "\n"))));
+                                  name: data[index]['name'],
+                                  text: data[index]['text']
+                                      .replaceAll("\\n", "\n"))));
                     },
                   );
                 });

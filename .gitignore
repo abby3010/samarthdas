@@ -9,6 +9,10 @@
 .history
 .svn/
 
+*.env
+
+/lib/secret.dart
+
 # IntelliJ related
 *.iml
 *.ipr

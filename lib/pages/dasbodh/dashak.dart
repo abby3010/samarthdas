@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:samarthdas_app/components/customAppBar.dart';
 import 'package:samarthdas_app/components/displayText.dart';
 
@@ -37,7 +38,7 @@ class Dashak extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ListItem(
                     title: data[index]["name"],
-                    leading:  const Image(image: AssetImage("assets/images/notebook_icon.png")),
+                    leading:  SvgPicture.asset("assets/images/notebook_icon.svg"),
                     onTap: () {
                       Navigator.push(
                           context,
