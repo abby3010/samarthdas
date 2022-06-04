@@ -9,6 +9,7 @@ import 'package:samarthdas_app/pages/homePage.dart';
 import 'package:samarthdas_app/pages/manobodh/manobodh.dart';
 import 'package:samarthdas_app/pages/media.dart';
 import 'package:samarthdas_app/pages/splashScreen.dart';
+import 'package:samarthdas_app/pages/upasana/upasana.dart';
 // import 'package:samarthdas_app/secret.dart';
 
 Future<void> main() async {
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/Dasbodh': (context) => const Dasbodh(),
         '/Bheemrupi': (context) => const Bheemrupi(),
         '/Manobodh': (context) => const Manobodh(),
+        '/Upasana' : (context) => const UpasanaContent(),
         '/media': (context) => Media(),
         '/parampara': (context) => const Parampara(
               showAppBar: false,
